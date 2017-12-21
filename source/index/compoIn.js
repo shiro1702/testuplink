@@ -11,3 +11,5 @@ import '../components/info/info.scss';
 import '../components/form/form.scss';
 import '../components/info_link/info_link.scss';
 import '../components/link-info/link-info.scss';
+import '../components/right-bar/right-bar.scss';
+import '../components/price/price.scss';
