@@ -1,0 +1,4 @@
+mixin phone(number)
+	div.phone
+		a.phone__number(href= "tel:" +number)= number
+		a.phone__callback(href="#") заказать звонок

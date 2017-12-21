@@ -1,3 +1,5 @@
+include ./compoIn.pug
+
 doctype html
 html
 	head
@@ -7,4 +9,24 @@ html
 	title Webpack app
 	body
 		h1 test pug 5
-		include ../components/menu/menu.pug
+		+header
+			+logo
+			+phone('+7(3822)90-45-96')
+			+menu
+			+btn('Заказать сертификат')
+			+search
+		+content('Цены на сертификаты электронной подписи')
+			+bread-crumbs
+			+form('order')
+
+		+footer
+			div
+				+logo
+				+info
+				+btn('Обратная связь')
+			div
+				+menu
+				+certificates('Наши сертификаты')
+			div
+				+phone ('+7(3822)90-45-96')
+				+parking('3','5')
