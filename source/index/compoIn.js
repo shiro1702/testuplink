@@ -9,3 +9,4 @@ import '../components/phone/phone.scss';
 import '../components/parking/parking.scss';
 import '../components/info/info.scss';
 import '../components/form/form.scss';
+import '../components/info_link/info_link.scss';
