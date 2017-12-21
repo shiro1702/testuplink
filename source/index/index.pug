@@ -18,21 +18,49 @@ html
 		+content('Цены на сертификаты электронной подписи')
 			+bread-crumbs
 			+form('order')(method="post" action="input1.php")
-				label.form__label Продукт
-					+form__select('Выберите услугу из списка или просто напишите для чего вам нужна подпись','pug 1', 'pug 2')(name="product")
-				label.form__label Имя
-					+form__input()(type="text" name="name" placeholder="Пантолемей Христорождественский")
-				label.form__label Телефон
-					+form__input()(type="text" name="phone" placeholder="+7-923-567-8897")
-				label.form__label Электронная почта
-					+form__input()(type="text" name="email" placeholder="example@mail.com")
-				label.form__label Наименование организации
-					+form__input()(type="text" name="organisation" placeholder="УЦ «Автограф»")
-				label.form__label Комментарии к заявке
-					+form__input()(type="text" name="comment" placeholder="Если есть что-то, что вы хотите дополнить или узнать, смело пишите")
-				p Дополнительные опции
-				+form__checkbox()(name="checkbox1" value="checkbox1")
-						span Защищённый носитель
+				//left otinons
+				div
+					label.form__label Продукт
+						+form__select('Выберите услугу из списка или просто напишите для чего вам нужна подпись','pug 1', 'pug 2')(name="product")
+					label.form__label Имя
+						+form__input()(type="text" name="name" placeholder="Пантолемей Христорождественский")
+					label.form__label Телефон
+						+form__input()(type="text" name="phone" placeholder="+7-923-567-8897")
+					label.form__label Электронная почта
+						+form__input()(type="text" name="email" placeholder="example@mail.com")
+					label.form__label Наименование организации
+						+form__input()(type="text" name="organisation" placeholder="УЦ «Автограф»")
+					label.form__label Комментарии к заявке
+						+form__input()(type="text" name="comment" placeholder="Если есть что-то, что вы хотите дополнить или узнать, смело пишите")
+					p Дополнительные опции
+					+form__checkbox()(name="checkbox1" )
+							span Защищённый носитель
+					+form__checkbox()(name="checkbox2" )
+							span Лицензия на право использования «КриптоАРМ Стандарт версия 5» бессрочная
+					+form__checkbox()(name="checkbox3" )
+							span Лицензия на право использования СКЗИ «КриптоПро CSP» на 1 год
+					+form__checkbox()(name="checkbox4" )
+							span Лицензия на право использования «КриптоАРМ Стандарт версия 5» бессрочная
+					+form__checkbox()(name="checkbox5" )
+							span Лицензия на право использования «КриптоПРО Office Signature версия 2.0» бессрочная
+					+form__checkbox()(name="checkbox6" )
+							span Дистрибутив СКЗИ «КриптоПро CSP» на CD Формуляр
+					+form__checkbox()(name="checkbox7")
+							span Консультация по настройке рабочего места для работы с электронной подписью
+					+form__checkbox()(name="checkbox8" )
+							span Установка СКЗИ, настройка рабочего места для работы с электронной подписью
+					+form__checkbox()(name="checkbox9" )
+							span Установка СКЗИ, настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в ЕСИА
+					+form__checkbox()(name="checkbox10" )
+							span Установка СКЗИ, настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в ЕСИА и ГИС ЖКХ
+					+form__checkbox()(name="checkbox11" )
+							span Настройка рабочего места для работы в ЕГАИС ФСРАР
+					+form__checkbox()(name="checkbox12" )
+							span Настройка рабочего места и регистрация на 1 из 5 федеральных ЭТП
+					+form__checkbox()(name="checkbox13" )
+							span Выезд специалиста к клиенту в пределах Томска
+				//right bar
+				div
 
 		+footer
 			div
