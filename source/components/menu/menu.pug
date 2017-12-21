@@ -1,6 +1,13 @@
 mixin menu
-	div.menu
-		ul
-			-for (var i = 1; i <= 3; i++) {
-			li= "This is a line " + i
-			-}
+	ul.menu&attributes(attributes)
+		li.menu__item
+			a.menu__link(href="#") Услуги и цены
+		li.menu__item
+			a.menu__link(href="#") Отчётность
+		li.menu__item
+			a.menu__link(href="#") Тендерный поиск
+		li.menu__item
+			a.menu__link(href="#") Поддержка
+		li.menu__item
+			a.menu__link(href="#") Контакты
+

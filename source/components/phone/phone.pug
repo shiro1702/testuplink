@@ -1,4 +1,12 @@
-mixin phone(number)
-	div.phone
-		a.phone__number(href= "tel:" +number)= number
+mixin phone(number, top)
+	div.phone&attributes(attributes)
+		if (top=='top')
+			-var num=number.substring(3,6)
+			-var ber=number.substring(8)
+			a.phone__number(href= "tel:" +number)
+				span.phone__num= num
+				span.phone__ber= ber
+		else
+			a.phone__number(href= "tel:" +number)= number
+		br
 		a.phone__callback(href="#") заказать звонок

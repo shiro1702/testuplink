@@ -1,1 +1,6 @@
-.content { }
+.content {
+	&__header{
+		text-align: center;
+		color:white;
+	}
+}

@@ -1,2 +1,6 @@
 mixin logo
-	div.logo
+	div.logo&attributes(attributes)
+		//| logo
+		a( href="/")
+			img(src= require( "../img/IMG Logo копия@1X.png") alt="Автограф лого" height="86" width="235")
+		block

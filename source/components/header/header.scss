@@ -1,8 +1,14 @@
-ul{
-  border: 1px solid black;
-  li{
-    display: inline-block;
-    padding: 5px 10px;
-    background: #bbb;
-  }
+.header{
+	margin-top: 34px;
+
+	&__btn{
+		display: inline-block;
+		height:40px;
+		width:210px;
+		text-align: center;
+		font-size: 16px;
+
+		color:rgb(47, 95, 191);
+		line-height: 40px;
+	}
 }

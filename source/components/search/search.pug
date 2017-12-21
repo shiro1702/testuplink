@@ -1,6 +1,7 @@
 mixin search
-	div.search
-		form.search__form(name="search")
+	div.search&attributes(attributes)
+		+form(search).search__form
 			label
 				| Поиск
-				input(name="q")
+				+form__input()(type="text" name="q" placeholder="Например, ЭЦП для Росреестра, подпись для торгов, ЕГАИС алкоголь")
+			div.search__btn
