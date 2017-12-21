@@ -6,13 +6,168 @@
   <link rel="stylesheet" type="text/css" href="bundle.css">
   <title>Webpack app</title>
   <body>
-    <h1>test pug 5</h1>
-<div class="menu">
-  <ul>
-    <li>This is a line 1</li>
-    <li>This is a line 2</li>
-    <li>This is a line 3</li>
-  </ul>
-</div>
+    <div class="grid grid__size grid__col12">
+      <div class="header box box__justify">
+        <div class="logo cell">
+          <!--| logo--><a href="/"><img src="images/IMG Logo копия@1X.png" alt="Автограф лого" height="86" width="235"></a>
+        </div>
+        <div class="phone cell"><a class="phone__number" href="tel:+7(3822)90-45-96"><span class="phone__num">382</span><span class="phone__ber">90-45-96</span></a><br><a class="phone__callback" href="#">заказать звонок</a>
+        </div>
+        <ul class="menu cell">
+          <li class="menu__item"><a class="menu__link" href="#">Услуги и цены</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Отчётность</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Тендерный поиск</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Поддержка</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+        </ul>
+        <div class="btn header__btn cell"><span>Заказать сертификат</span>
+        </div>
+        <div class="search cell cell__full cell__col12">
+          <form class="search__form" id="name">
+            <label>Поиск<br>
+              <input class="form__input" type="text" name="q" placeholder="Например, ЭЦП для Росреестра, подпись для торгов, ЕГАИС алкоголь"><br>
+            </label>
+            <div class="search__btn"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid__size grid__col12">
+      <div class="content box box__justify">
+        <div class="cell cell__col12 cell__center">
+          <h1 class="content__head">Цены на сертификаты электронной подписи</h1>
+        </div>
+        <ul class="bread-crumbs cell cell__full cell__col12 cell__center">
+          <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Главная</a></li>
+          <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Услуги и цены</a></li>
+        </ul>
+        <form class="box box__justify" id="name" name="order" method="post" action="input1.php">
+          <!--left otinons-->
+          <div class="cell cell__full cell__col7 cell__left">
+            <label class="form__label">Продукт<br>
+              <select class="form__select" name="product">
+                <option disabled selected>Выберите услугу из списка или просто напишите для чего вам нужна подпись</option>
+                <option value="pug 1">pug 1</option>
+                <option value="pug 2">pug 2</option>
+              </select><br>
+            </label>
+            <label class="form__label">Имя<br>
+              <input class="form__input" type="text" name="name" placeholder="Пантолемей Христорождественский"><br>
+            </label>
+            <label class="form__label">Телефон<br>
+              <input class="form__input" type="text" name="phone" placeholder="+7-923-567-8897"><br>
+            </label>
+            <label class="form__label">Электронная почта<br>
+              <input class="form__input" type="text" name="email" placeholder="example@mail.com"><br>
+            </label>
+            <label class="form__label">Наименование организации<br>
+              <input class="form__input" type="text" name="organisation" placeholder="УЦ «Автограф»"><br>
+            </label>
+            <label class="form__label">Комментарии к заявке<br>
+              <input class="form__input" type="text" name="comment" placeholder="Если есть что-то, что вы хотите дополнить или узнать, смело пишите"><br>
+            </label>
+            <p>Дополнительные опции</p>
+            <input class="form__checkbox" type="checkbox" name="checkbox1">Защищённый носитель<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox2">Лицензия на право использования<a class="link-info">СКЗИ «КриптоПро CSP»</a>
+            <div class="link-info__info">
+              <p>На данный момент в связи с изменениями в законодательстве для осуществления официальных запросов в государственные службы при помощи онлайн-служб требуется получить ЭЦП для портала Росреестра. </p>
+            </div>бессрочная'<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox3">Лицензия на право использования<a class="link-info">СКЗИ «КриптоПро CSP»</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div>на 1 год
+            +900 ₽ к стоимости<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox4">Лицензия на право использования<a class="link-info">«КриптоАРМ Стандарт версия 5»</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div>бессрочная<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox5">Лицензия на право использования<a class="link-info">«КриптоПРО Office Signature версия 2.0»</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div>бессрочная<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox6">Дистрибутив<a class="link-info">СКЗИ «КриптоПро CSP»</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div>на CD Формуляр<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox7">Консультация по настройке рабочего места для работы с электронной подписью<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox8">Установка<a class="link-info">СКЗИ</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div>, настройка рабочего места для работы с электронной подписью<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox9">Установка<a class="link-info">СКЗИ</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div>, настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в<a class="link-info">ЕСИА</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div><br>
+            <input class="form__checkbox" type="checkbox" name="checkbox10">Установка<a class="link-info">СКЗИ</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div>, настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в<a class="link-info">ЕСИА</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div>и<a class="link-info">ГИС ЖКХ</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div><br>
+            <input class="form__checkbox" type="checkbox" name="checkbox11">Настройка рабочего места для работы в<a class="link-info">ЕГАИС ФСРАР</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div><br>
+            <input class="form__checkbox" type="checkbox" name="checkbox12">Настройка рабочего места и регистрация на 1 из 5<a class="link-info">федеральных ЭТП</a>
+            <div class="link-info__info">
+              <p>some text</p>
+            </div><br>
+            <input class="form__checkbox" type="checkbox" name="checkbox13">Выезд специалиста к клиенту в пределах Томска<br>
+          </div>
+          <!--right bar-->
+          <div class="cell cell__full cell__col4 cell__center">
+            <div class="price">2500 ₽
+            </div><br>
+            <input class="form__btn btn" type="submit"><br>
+            <p>Ваши контактные данные необходимы для уточнения деталей заказа. Мы не используем эти данные для рекламных рассылок и не передаем третьим лицам.</p>
+            <p>Копии всех необходимых документов вы можете передать нам по электронной почте, для того чтобы получить сертификат, вам даже не нужно выходить из дома.</p>
+            <p>Сертификат действует 1 год, после этого можно будеть его продлить в нашем удостоверяющем центре</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <div class="logo">
+          <!--| logo--><a href="/"><img src="images/IMG Logo копия@1X.png" alt="Автограф лого" height="86" width="235"></a>
+        </div>
+        <div class="info">
+          <p>г. Томск, пер. Совпартшкольный, 3</p>
+          <p>Время работы 8:30–17:00</p>
+          <p><a href="mailto:uc@uguc.ru">uc@uguc.ru</a></p>
+        </div>
+        <div class="btn"><span>Обратная связь</span>
+        </div>
+      </div>
+      <div>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Услуги и цены</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Отчётность</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Тендерный поиск</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Поддержка</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+        </ul>
+        <div class="certificates">
+          <p>Наши сертификаты</p>
+        </div>
+      </div>
+      <div>
+        <div class="phone"><a class="phone__number" href="tel:+7(3822)90-45-96">+7(3822)90-45-96</a><br><a class="phone__callback" href="#">заказать звонок</a>
+        </div>
+        <div class="parking">
+          <div class="parking__logo"></div>
+          <div class="parking__title">Бесплатная парковка</div>
+          <p class="parking__info">У нас есть отдельная парковка на 3 - 5 машин, на которую допускаются только наши клиенты.</p>
+        </div>
+      </div>
+      <!--(C)-->
+    </div>
   <script type="text/javascript" src="index.js"></script></body>
 </html>
