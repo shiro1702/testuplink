@@ -18,16 +18,21 @@ html
 		+content('Цены на сертификаты электронной подписи')
 			+bread-crumbs
 			+form('order')(method="post" action="input1.php")
+				label.form__label Продукт
+					+form__select('Выберите услугу из списка или просто напишите для чего вам нужна подпись','pug 1', 'pug 2')(name="product")
 				label.form__label Имя
 					+form__input()(type="text" name="name" placeholder="Пантолемей Христорождественский")
 				label.form__label Телефон
-					+form__input()(type="text" name="name" placeholder="+7-923-567-8897")
+					+form__input()(type="text" name="phone" placeholder="+7-923-567-8897")
 				label.form__label Электронная почта
-					+form__input()(type="text" name="name" placeholder="example@mail.com")
+					+form__input()(type="text" name="email" placeholder="example@mail.com")
 				label.form__label Наименование организации
-					+form__input()(type="text" name="name" placeholder="УЦ «Автограф»")
+					+form__input()(type="text" name="organisation" placeholder="УЦ «Автограф»")
 				label.form__label Комментарии к заявке
-					+form__input()(type="text" name="name" placeholder="Если есть что-то, что вы хотите дополнить или узнать, смело пишите")
+					+form__input()(type="text" name="comment" placeholder="Если есть что-то, что вы хотите дополнить или узнать, смело пишите")
+				p Дополнительные опции
+				+form__checkbox()(name="checkbox1" value="checkbox1")
+						span Защищённый носитель
 
 		+footer
 			div

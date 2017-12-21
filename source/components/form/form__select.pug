@@ -1,2 +1,6 @@
-mixin form__select
-	div.form__select
+mixin form__select (text, ...options)
+	select.form__select&attributes(attributes)
+		option(disabled selected)= text
+		each option in options
+			option(value= option)= option
+
