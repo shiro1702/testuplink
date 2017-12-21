@@ -16,11 +16,13 @@ html
 				+btn('Заказать сертификат').header__btn.cell
 				+search.cell.cell__full.cell__col12
 		div.grid.grid__size.grid__col12
-			+content('Цены на сертификаты электронной подписи')
-				+bread-crumbs
-				+form('order')(method="post" action="input1.php")
+			+content.box.box__justify
+				div.cell.cell__col12.cell__center
+					h1.content__head Цены на сертификаты электронной подписи
+				+bread-crumbs.cell.cell__full.cell__col12.cell__center
+				+form('order')(method="post" action="input1.php").box.box__justify
 					//left otinons
-					div
+					div.cell.cell__full.cell__col7.cell__left
 						label.form__label Продукт
 							+form__select('Выберите услугу из списка или просто напишите для чего вам нужна подпись','pug 1', 'pug 2')(name="product")
 						label.form__label Имя
@@ -84,7 +86,7 @@ html
 						+form__checkbox()(name="checkbox13" )
 							| Выезд специалиста к клиенту в пределах Томска
 					//right bar
-					+right-bar
+					div.cell.cell__full.cell__col4.cell__center
 						+price 2500 ₽
 						+form__btn(class="btn") Отправить заявку
 						p
