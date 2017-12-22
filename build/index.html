@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="bundle.css">
   <title>Webpack app</title>
   <body>
-    <div class="grid grid__size grid__col12">
+    <div class="bg-head grid grid__size grid__col12">
       <div class="header box box__justify">
         <div class="logo cell">
           <!--| logo--><a href="/"><img src="images/IMG Logo копия@1X.png" alt="Автограф лого" height="86" width="235"></a>
@@ -23,7 +23,7 @@
         <div class="btn header__btn cell"><span>Заказать сертификат</span>
         </div>
         <div class="search cell cell__full cell__col12">
-          <form class="search__form" id="name">
+          <form class="form search__form" id="name">
             <label>Поиск<br>
               <input class="form__input" type="text" name="q" placeholder="Например, ЭЦП для Росреестра, подпись для торгов, ЕГАИС алкоголь"><br>
             </label>
@@ -38,12 +38,12 @@
           <h1 class="content__head">Цены на сертификаты электронной подписи</h1>
         </div>
         <ul class="bread-crumbs cell cell__full cell__col12 cell__center">
-          <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Главная</a></li>
+          <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Главная</a></li>&bull;
           <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Услуги и цены</a></li>
         </ul>
-        <form class="box box__justify" id="name" name="order" method="post" action="input1.php">
+        <form class="form grid grid__size grid__col12 grid__gv40" id="name" name="order" method="post" action="input1.php">
           <!--left otinons-->
-          <div class="cell cell__full cell__col7 cell__left">
+          <div class="bar cell cell__full cell__col8 cell__sm12 cell__left">
             <label class="form__label">Продукт<br>
               <select class="form__select" name="product">
                 <option disabled selected>Выберите услугу из списка или просто напишите для чего вам нужна подпись</option>
@@ -68,67 +68,110 @@
             </label>
             <p>Дополнительные опции</p>
             <input class="form__checkbox" type="checkbox" name="checkbox1">Защищённый носитель<br>
-            <input class="form__checkbox" type="checkbox" name="checkbox2">Лицензия на право использования<a class="link-info">СКЗИ «КриптоПро CSP»</a>
-            <div class="link-info__info">
-              <p>На данный момент в связи с изменениями в законодательстве для осуществления официальных запросов в государственные службы при помощи онлайн-служб требуется получить ЭЦП для портала Росреестра. </p>
-            </div>бессрочная'<br>
-            <input class="form__checkbox" type="checkbox" name="checkbox3">Лицензия на право использования<a class="link-info">СКЗИ «КриптоПро CSP»</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div>на 1 год
+            <input class="form__checkbox" type="checkbox" name="checkbox2">Лицензия на право использования<a class="link-info">СКЗИ «КриптоПро CSP»
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>На данный момент в связи с изменениями в законодательстве для осуществления официальных запросов в государственные службы при помощи онлайн-служб требуется получить ЭЦП для портала Росреестра. </p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a>бессрочная'<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox3">Лицензия на право использования<a class="link-info">СКЗИ «КриптоПро CSP»
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a>на 1 год
             +900 ₽ к стоимости<br>
-            <input class="form__checkbox" type="checkbox" name="checkbox4">Лицензия на право использования<a class="link-info">«КриптоАРМ Стандарт версия 5»</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div>бессрочная<br>
-            <input class="form__checkbox" type="checkbox" name="checkbox5">Лицензия на право использования<a class="link-info">«КриптоПРО Office Signature версия 2.0»</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div>бессрочная<br>
-            <input class="form__checkbox" type="checkbox" name="checkbox6">Дистрибутив<a class="link-info">СКЗИ «КриптоПро CSP»</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div>на CD Формуляр<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox4">Лицензия на право использования<a class="link-info">«КриптоАРМ Стандарт версия 5»
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a>бессрочная<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox5">Лицензия на право использования<a class="link-info">«КриптоПРО Office Signature версия 2.0»
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a>бессрочная<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox6">Дистрибутив<a class="link-info">СКЗИ «КриптоПро CSP»
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a> на CD Формуляр<br>
             <input class="form__checkbox" type="checkbox" name="checkbox7">Консультация по настройке рабочего места для работы с электронной подписью<br>
-            <input class="form__checkbox" type="checkbox" name="checkbox8">Установка<a class="link-info">СКЗИ</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div>, настройка рабочего места для работы с электронной подписью<br>
-            <input class="form__checkbox" type="checkbox" name="checkbox9">Установка<a class="link-info">СКЗИ</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div>, настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в<a class="link-info">ЕСИА</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div><br>
-            <input class="form__checkbox" type="checkbox" name="checkbox10">Установка<a class="link-info">СКЗИ</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div>, настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в<a class="link-info">ЕСИА</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div>и<a class="link-info">ГИС ЖКХ</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div><br>
-            <input class="form__checkbox" type="checkbox" name="checkbox11">Настройка рабочего места для работы в<a class="link-info">ЕГАИС ФСРАР</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div><br>
-            <input class="form__checkbox" type="checkbox" name="checkbox12">Настройка рабочего места и регистрация на 1 из 5<a class="link-info">федеральных ЭТП</a>
-            <div class="link-info__info">
-              <p>some text</p>
-            </div><br>
+            <input class="form__checkbox" type="checkbox" name="checkbox8">Установка<a class="link-info">СКЗИ
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a>, настройка рабочего места для работы с электронной подписью<br>
+            <input class="form__checkbox" type="checkbox" name="checkbox9">Установка<a class="link-info">СКЗИ
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a>, настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в<a class="link-info">ЕСИА
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a><br>
+            <input class="form__checkbox" type="checkbox" name="checkbox10">Установка<a class="link-info">СКЗИ
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a>, настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в<a class="link-info">ЕСИА
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a>и<a class="link-info">ГИС ЖКХ
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a><br>
+            <input class="form__checkbox" type="checkbox" name="checkbox11">Настройка рабочего места для работы в<a class="link-info">ЕГАИС ФСРАР
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a><br>
+            <input class="form__checkbox" type="checkbox" name="checkbox12">Настройка рабочего места и регистрация на 1 из 5<a class="link-info">федеральных ЭТП
+              <div class="link-info__info">
+                <div class="link-info__cloud">
+                  <p>some text</p>
+                </div>
+                <div class="link-info__arrow"></div>
+              </div></a><br>
             <input class="form__checkbox" type="checkbox" name="checkbox13">Выезд специалиста к клиенту в пределах Томска<br>
           </div>
           <!--right bar-->
-          <div class="cell cell__full cell__col4 cell__center">
-            <div class="price">2500 ₽
-            </div><br>
-            <input class="form__btn btn" type="submit"><br>
-            <p>Ваши контактные данные необходимы для уточнения деталей заказа. Мы не используем эти данные для рекламных рассылок и не передаем третьим лицам.</p>
-            <p>Копии всех необходимых документов вы можете передать нам по электронной почте, для того чтобы получить сертификат, вам даже не нужно выходить из дома.</p>
-            <p>Сертификат действует 1 год, после этого можно будеть его продлить в нашем удостоверяющем центре</p>
+          <div class="bar cell cell__full cell__col4 cell__sm12 cell__center">
+            <div class="right-bar">
+              <div class="price"><strong>2500 ₽</strong>
+              </div><br>
+              <input class="form__btn btn" type="submit" value="Отправить заявку"><br>
+              <div class="cell__left">
+                <p>Ваши контактные данные необходимы для уточнения деталей заказа. Мы не используем эти данные для рекламных рассылок и не передаем третьим лицам.</p>
+                <p>Копии всех необходимых документов вы можете передать нам по<a href="#">электронной почте</a>, для того чтобы получить сертификат, вам даже не нужно выходить из дома.</p>
+                <p>Сертификат действует<strong>1 год</strong>, после этого можно будеть его продлить в нашем удостоверяющем центре</p>
+              </div>
+            </div>
           </div>
         </form>
       </div>
