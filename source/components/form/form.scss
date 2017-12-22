@@ -1,1 +1,29 @@
-.order-form { }
+@import '../../index/index';
+
+.form {
+	&__label{
+		color:$neutral;
+		&_right{
+			color: $basecolor;
+		}
+		&_wrong{
+			color: $wrongcolor;
+		}
+	}
+
+	&__input{
+		width:100%;
+		border:none;
+		border-bottom: 1px solid $neutral;
+		background: none;
+		&::placeholder{
+			color:$neutral;
+		}
+	}
+	&__select{
+		width:100%;
+		border:none;
+		border-bottom: 1px solid $neutral;
+		background: none;
+	}
+}
