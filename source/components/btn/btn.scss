@@ -1,1 +1,11 @@
-.btn { }
+@import '../../index/index';
+
+.btn {
+height:48px;
+	width:100%;
+	background-color: $basecolor;
+	color:white;
+	display: inline-block;
+	border:none;
+	box-shadow: 0 2px darken($basecolor, 20%);
+}
