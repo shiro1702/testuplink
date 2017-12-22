@@ -1,10 +1,11 @@
-body {
-    background-color: aquamarine;
-  }
+
 *{
-	box-shadow:inset 0 0 1px  blue;
+	//box-shadow:inset 0 0 1px  blue;
 }
 
+$basecolor:#2f5fbf;
+$wrongcolor:#b61111;
+$neutral:#cfcfd1;
 
 $breakpoints: (
 	xs: 480,
@@ -20,6 +21,13 @@ $columns: (12);
 $indents: (1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50);
 
 $htmlFontSize: 18;
+
+body {
+    background-color: lightgray;
+	a {
+		color:$basecolor;
+	}
+  }
 
 @mixin default($breakpoints, $htmlFontSize) {
 	* {
@@ -43,7 +51,7 @@ $htmlFontSize: 18;
 			@media (max-width: #{nth(map-values($breakpoints), $i)}px) {
 				font-size: #{$size}px;
 			}
-			$size: $size - 0.5;
+			$size: $size - 2;
 		}
 	}
 }
@@ -280,4 +288,10 @@ $htmlFontSize: 18;
 }
 @each $indent in $indents {
 	@include grid-indent($indent, $htmlFontSize);
+}
+
+
+.bg-head{
+	background-color: white;
+	background-image:  url(require( "IMG1.png" ))  no-repeate;
 }
