@@ -13,3 +13,6 @@ import '../components/info_link/info_link.scss';
 import '../components/link-info/link-info.scss';
 import '../components/right-bar/right-bar.scss';
 import '../components/price/price.scss';
+import '../components/bar/bar.scss';
+import '../components/menu/menu.scss';
+import '../components/header/header.scss';
