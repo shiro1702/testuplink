@@ -21,21 +21,22 @@
 		}
 	}
 	&__cloud{
+		text-align: left;
 		background-color: #333347;
 		padding: 14px 21px;
 		border-radius: 4px;
-		margin-top: -10px;
 	}
 	&__arrow{
 		display: inline-block;
-		margin-top: -10px;
+		//margin-top: -20px;
 		//position:absolute;
-		background-color:white;
+		background-color: #333347;
 		height: 10px;
 		width:10px;
 		right:50%;
-		//transform: translate(50%, -50%);
+		//$transform: translate(0, -50%);
 		transform: rotate(45deg);
-
+		margin-top: -7px;
+		margin-bottom: 16px;
 	}
 }
