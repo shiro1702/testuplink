@@ -278,6 +278,15 @@ body {
 			}
 
 		}
+		&__gvtb#{$indent} {
+			> .box {
+				margin: #{- $indent / $htmlFontSize}rem;
+			}
+			> .box > .cell,
+			> .cell {
+				padding: #{$indent / $htmlFontSize}rem;
+			}
+		}
 	}
 }
 
