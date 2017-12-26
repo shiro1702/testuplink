@@ -1,1 +1,40 @@
-.search { }
+.search {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	&__label{
+		//position: absolute;
+		//float:left;
+		//width:130px;
+		//text-align: right;
+	}
+	&__input{
+		//overflow: auto;
+		//margin-left:140px;
+		//padding-left:140px;
+		//float:left
+		//width:auto;
+		display: inline-block;
+		background: white !important;
+		border:none;
+		padding:10px !important;
+		border-radius: 3px;
+	}
+	&__cloud{
+		position: relative;
+		&::before{
+			//line-height:
+			vertical-align: middle;
+			position: absolute;
+			display: inline-block;
+			content: "";
+			background-color: white;
+			transform:  translate(0, -50%) rotate(45deg);
+			margin-left: -5px;
+			top:50%;
+			width: 10px;
+			height: 10px;
+			//border:1px solid black;
+		}
+	}
+
+}

@@ -1,7 +1,9 @@
 mixin search
 	div.search&attributes(attributes)
-		+form(search).search__form
-			label
-				| Поиск
-				+form__input()(type="text" name="q" placeholder="Например, ЭЦП для Росреестра, подпись для торгов, ЕГАИС алкоголь")
-			div.search__btn
+		+form(search).search__form.grid.grid__col12.grid__g15
+			div.box.box__center.box__middle
+				label.search__label.cell.cell__col1.cell__right
+					| Поиск
+				div.search__cloud.cell.cell__col10
+					+form__input()(type="text" name="q" placeholder="Например, ЭЦП для Росреестра, подпись для торгов, ЕГАИС алкоголь").search__input
+				div.search__btn
