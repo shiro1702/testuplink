@@ -125,6 +125,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_menu_menu_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_menu_menu_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_header_header_scss__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_header_header_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_header_header_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_bg_head_bg_head_scss__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_bg_head_bg_head_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_bg_head_bg_head_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__fonts_scss__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__fonts_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__fonts_scss__);
+
+
 
 
 
@@ -249,6 +255,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 20 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 22 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
