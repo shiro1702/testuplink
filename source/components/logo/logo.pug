@@ -1,6 +1,10 @@
-mixin logo
+mixin logo(pos)
 	div.logo&attributes(attributes)
 		//| logo
-		a( href="/")
-			img(src= require( "../img/IMG Logo копия@1X.png") alt="Автограф лого" height="86" width="235")
+		if (pos == 'top')
+			a( href="/")
+				img(src= require( "../img/IMG Logo копия@1X.png") alt="Автограф лого" height="86" width="235").logo__img.logo__img_top
+		else
+			a( href="/")
+				img(src= require( "../img/IMG · Logo @1X.png") alt="Автограф лого").logo__img.logo__img_bottom
 		block

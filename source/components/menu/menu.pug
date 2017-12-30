@@ -1,5 +1,6 @@
 mixin menu
 	ul.menu&attributes(attributes)
+		li.menu__item_header Меню
 		li.menu__item
 			a.menu__link(href="#") Услуги и цены
 		li.menu__item
@@ -10,4 +11,4 @@ mixin menu
 			a.menu__link(href="#") Поддержка
 		li.menu__item
 			a.menu__link(href="#") Контакты
-
+		block

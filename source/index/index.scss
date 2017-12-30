@@ -1,4 +1,9 @@
+//@import './fonts';
 
+body{
+	background: #f0f4f7;
+	font-family: 'Conv_SFUIText-Medium';
+}
 *{
 	//box-shadow:inset 0 0 1px  blue;
 }
@@ -22,12 +27,21 @@ $indents: (1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50);
 
 $htmlFontSize: 18;
 
+html{
+	//overflow:  hidden;
+}
 body {
+	//overflow:  hidden;
+
     background-color: lightgray;
 	a {
 		color:$basecolor;
 	}
-  }
+
+ }
+
+.site{
+}
 
 @mixin default($breakpoints, $htmlFontSize) {
 	* {
@@ -38,9 +52,9 @@ body {
 	body {
 		margin: 0;
 		padding: 0;
-		width: 100%;
-		height: 100%;
-		overflow-x: hidden;
+		//width: 100%;
+		//height: 100%;
+		//overflow-x: hidden;
 	}
 
 	html {
@@ -105,6 +119,39 @@ body {
 				font-size: medium;
 			}
 		}
+
+
+		@each $name, $width in $breakpoints {
+			@media (max-width: #{$width}px) {
+				&__#{$name} {
+					&_left {
+						text-align: left;
+					}
+
+					&_right {
+						text-align: right;
+					}
+
+					&_center {
+						text-align: center;
+					}
+
+					&_justify {
+						text-align: justify;
+						text-justify: newspaper;
+
+						&::after {
+							content: "";
+							width: 100%;
+							height: 0;
+							display: inline-block;
+							font-size: medium;
+						}
+					}
+				}
+			}
+		}
+
 
 		&__top {
 			&::before {
@@ -227,6 +274,31 @@ body {
 					display: inline-block;
 					width: auto;
 				}
+				.cell__#{$name} {
+					//для задания ориетнации контента каждой ячейки при разном разрешении
+					&_left {
+						text-align: left;
+					}
+					&_right {
+						text-align: right;
+					}
+					&_center {
+						text-align: center;
+					}
+					&_justify {
+						text-align: justify;
+						text-justify: newspaper;
+					}
+					&_top {
+						vertical-align: top;
+					}
+					&_middle {
+						vertical-align: middle;
+					}
+					&_bottom {
+						vertical-align: bottom;
+					}
+				}
 
 				@for $i from 1 through $columns {
 					> .box > .cell__#{$name}#{$i},
@@ -300,7 +372,4 @@ body {
 }
 
 
-.bg-head{
-	//background-color: red;
-	background-image:  url(require( "IMG1.png" ))  no-repeate;
-}
+

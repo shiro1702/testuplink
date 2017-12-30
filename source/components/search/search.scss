@@ -2,6 +2,7 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 	&__label{
+		color:white;
 		//position: absolute;
 		//float:left;
 		//width:130px;
@@ -23,16 +24,36 @@
 		position: relative;
 		&::before{
 			//line-height:
-			vertical-align: middle;
+			//vertical-align: middle;
 			position: absolute;
-			display: inline-block;
+			//display: inline-block;
 			content: "";
 			background-color: white;
 			transform:  translate(0, -50%) rotate(45deg);
-			margin-left: -5px;
+			margin-left: -3px;
 			top:50%;
-			width: 10px;
-			height: 10px;
+			width: 5px;
+			height: 5px;
+			//border:1px solid black;
+		}
+		&::after{
+			$xwh:24px;
+			//line-height:
+			//vertical-align: middle;
+			position: absolute;
+			//display: inline-block;
+			content: "";
+			//background-color: black;
+			background-image: url('ICN@1X.png');
+			transform:  translateY(-50%);// rotate(45deg);
+			//margin-left: -3px;
+			top:50%;
+			right: $xwh;
+			//margin-right: 6px;
+			//right: 2*$xwh;
+			//left:100%;
+			width: $xwh;
+			height: $xwh;
 			//border:1px solid black;
 		}
 	}

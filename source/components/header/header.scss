@@ -1,7 +1,11 @@
 .header{
-	margin-top: 34px;
-
+	padding-top: 34px;
+	//padding-right: 10%;
+	//padding-left: 10%;
+	//padding-top:
 	&__btn{
+		$bgColor:#fff;
+
 		display: inline-block;
 		height:40px;
 		width:210px;
@@ -10,7 +14,11 @@
 
 		color:rgb(47, 95, 191);
 		line-height: 40px;
-		background-color: white;
-		box-shadow: none;
+		background-color: $bgColor;
+		border-radius: 3px;
+		box-shadow: 0 0 20px rgba(#002f43,0.15);
+		&:hover{
+			background-color: darken($bgColor, 5%);
+		}
 	}
 }

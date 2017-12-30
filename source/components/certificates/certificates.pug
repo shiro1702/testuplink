@@ -1,4 +1,4 @@
 mixin certificates(title)
-	div.certificates
-		p= title
+	div.certificates&attributes(attributes)
+		p.certificates__title= title
 		block

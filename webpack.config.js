@@ -6,6 +6,7 @@ const devserver = require('./webpack/devserver');
 const sass = require('./webpack/sass');
 const sass_prod = require('./webpack/sass-prod');
 const images = require('./webpack/images');
+const fonts = require('./webpack/fonts');
 
 const ExtractTextPlugin = require ('extract-text-webpack-plugin');
 
@@ -33,7 +34,8 @@ const common = merge([
     ],
     },
     pug(),
-	images()
+	images(),
+	fonts()
 ]);
 
 module.exports = function(env) {

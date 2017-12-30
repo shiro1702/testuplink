@@ -8,120 +8,160 @@ html
 	link(rel="stylesheet" type="text/css" href="bundle.css")
 	title Webpack app
 	body
-		div.bg-head.grid.grid__size.grid__col12
-			+header.box.box__justify
-				+logo.cell
-				+phone('+7(3822)90-45-96', 'top').cell
-				+menu.cell
-				+btn('Заказать сертификат').header__btn.cell
-				+search.cell.cell__full.cell__col12
-		div.grid.grid__size.grid__col12
-			+content.box.box__justify
-				div.cell.cell__col12.cell__center
-					h1.content__head Цены на сертификаты электронной подписи
-				+bread-crumbs.cell.cell__full.cell__col12.cell__center
+		input(type="checkbox" id="nav-trigger" ).menu__trigger
+		label(for="nav-trigger").menu__trigger_label.menu__trigger-label
+		div.site
+			+bg-head
+			div.grid.grid__size.grid__col12.grid__g20
+				+header.box.box__justify.box__sm_center
+					+logo('top').cell.cell__xs12.cell__sm12.cell__center
+					+phone('+7(3822)90-45-96', 'top').cell.cell_xs0.cell__sm0
+					+menu.cell.menu__mob
+					+btn('Заказать сертификат').header__btn.cell.cell__xs6.cell__sm6
+					+search.cell.cell__full.cell__col12.cell_xs0.cell__sm0
+			div.grid.grid__size.grid__col12
+				+content.box.box__justify
+					div.cell.cell__col12.cell__center
+						h1.content__head Цены на сертификаты электронной подписи
+					+bread-crumbs.cell.cell__full.cell__col12.cell__center
 
-				div.content__body
-					+form('order')(method="post" action="input1.php").grid.grid__size.grid__col12.grid__gvtb40
-						//left otinons
-						+bar.cell.cell__full.cell__col8.cell__sm12.cell__left
-							label.form__label Продукт
-								+form__select('Выберите услугу из списка или просто напишите для чего вам нужна подпись','pug 1', 'pug 2')(name="product")
-							label.form__label Имя
-								+form__input()(type="text" name="name" placeholder="Пантолемей Христорождественский")
-							label.form__label Телефон
-								+form__input()(type="text" name="phone" placeholder="+7-923-567-8897")
-							label.form__label Электронная почта
-								+form__input()(type="text" name="email" placeholder="example@mail.com")
-							label.form__label Наименование организации
-								+form__input()(type="text" name="organisation" placeholder="УЦ «Автограф»")
-							label.form__label Комментарии к заявке
-								+form__input()(type="text" name="comment" placeholder="Если есть что-то, что вы хотите дополнить или узнать, смело пишите")
-							h3 Дополнительные опции
-							+form__checkbox()(name="checkbox1" )
-								| Защищённый носитель
-							+form__checkbox()(name="checkbox2" )
-								| Лицензия на право использования
-								+link-info('На данный момент в связи с изменениями в законодательстве для осуществления официальных запросов в государственные службы при помощи онлайн-служб требуется получить ЭЦП для портала Росреестра. ') СКЗИ «КриптоПро CSP»
-								| бессрочная'
-							+form__checkbox()(name="checkbox3" )
-								| Лицензия на право использования
-								+link-info('some text') СКЗИ «КриптоПро CSP»
-								| на 1 год
-								|+900 ₽ к стоимости
-							+form__checkbox()(name="checkbox4" )
-								|Лицензия на право использования
-								+link-info('some text') «КриптоАРМ Стандарт версия 5»
-								| бессрочная
-							+form__checkbox()(name="checkbox5" )
-								| Лицензия на право использования
-								+link-info('some text') «КриптоПРО Office Signature версия 2.0»
-								| бессрочная
-							+form__checkbox()(name="checkbox6" )
-								| Дистрибутив
-								+link-info('some text') СКЗИ «КриптоПро CSP»
-								|  на CD Формуляр
-							+form__checkbox()(name="checkbox7")
-								| Консультация по настройке рабочего места для работы с электронной подписью
-							+form__checkbox()(name="checkbox8" )
-								| Установка
-								+link-info('some text') СКЗИ
-								| , настройка рабочего места для работы с электронной подписью
-							+form__checkbox()(name="checkbox9" )
-								| Установка
-								+link-info('some text') СКЗИ
-								| , настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в
-								+link-info('some text') ЕСИА
-							+form__checkbox()(name="checkbox10" )
-								| Установка
-								+link-info('some text')  СКЗИ
-								| , настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в
-								+link-info('some text')  ЕСИА
-								| и
-								+link-info('some text')  ГИС ЖКХ
-							+form__checkbox()(name="checkbox11" )
-								| Настройка рабочего места для работы в
-								+link-info('some text')  ЕГАИС ФСРАР
-							+form__checkbox()(name="checkbox12" )
-								| Настройка рабочего места и регистрация на 1 из 5
-								+link-info('some text')  федеральных ЭТП
-							+form__checkbox()(name="checkbox13" )
-								| Выезд специалиста к клиенту в пределах Томска
-						//right bar
-						+bar.cell.cell__full.cell__col4.cell__sm12.cell__center
-							+right-bar
-								+price
-									strong 2500 ₽
-								+form__btn('Отправить заявку')(class="btn")
-								div.cell__left
-									p
-										| Ваши контактные данные необходимы для уточнения деталей заказа. Мы не используем эти данные для рекламных рассылок и не передаем третьим лицам.
-									p
-										| Копии всех необходимых документов вы можете передать нам по
-										a(href="#") электронной почте
-										|, для того чтобы получить сертификат, вам даже не нужно выходить из дома.
-									p
-										| Сертификат действует
-										strong 1 год
-										|, после этого можно будеть его продлить в нашем удостоверяющем центре
+					div.content__body
+						+form('order')(method="post" action="input1.php").grid.grid__size.grid__col12.grid__gvtb40
+							//left otinons
+							+bar.cell.cell__full.cell__col8.cell__sm12.cell__left
+								label.form__label Продукт
+									+form__select('Выберите услугу из списка или просто напишите для чего вам нужна подпись','pug 1', 'pug 2')(name="product")
+									div.form__error
+								label.form__label Имя
+									+form__input()(type="text" name="name" placeholder="Пантолемей Христорождественский")
+									div.form__error
+								label.form__label Телефон
+									+form__input()(type="text" name="phone" placeholder="+7-923-567-8897")
+									div.form__error
+								label.form__label Электронная почта
+									+form__input()(type="text" name="email" placeholder="example@mail.com")
+									div.form__error
+								label.form__label Наименование организации
+									+form__input()(type="text" name="organisation" placeholder="УЦ «Автограф»")
+									div.form__error
+								label.form__label Комментарии к заявке
+									+form__input()(type="text" name="comment" placeholder="Если есть что-то, что вы хотите дополнить или узнать, смело пишите")
+									div.form__error
+								h3 Дополнительные опции
+								+form__checkbox("ch1")(name="checkbox1" )
+									| Защищённый носитель
+								+form__checkbox("ch2")(name="checkbox2" )
+									| Лицензия на право использования
+									+link-info('На данный момент в связи с изменениями в законодательстве для осуществления официальных запросов в государственные службы при помощи онлайн-служб требуется получить ЭЦП для портала Росреестра. ') СКЗИ «КриптоПро CSP»
+									| бессрочная
+								+form__checkbox("ch3")(name="checkbox3" )
+									| Лицензия на право использования
+									+link-info('some text') СКЗИ «КриптоПро CSP»
+									| на 1 год
+									|+900 ₽ к стоимости
+								+form__checkbox("ch4")(name="checkbox4" )
+									|Лицензия на право использования
+									+link-info('some text') «КриптоАРМ Стандарт версия 5»
+									| бессрочная
+								+form__checkbox("ch5")(name="checkbox5" )
+									| Лицензия на право использования
+									+link-info('some text') «КриптоПРО Office Signature версия 2.0»
+									| бессрочная
+								+form__checkbox("ch6")(name="checkbox6" )
+									| Дистрибутив
+									+link-info('some text') СКЗИ «КриптоПро CSP»
+									|  на CD Формуляр
+								+form__checkbox("ch7")(name="checkbox7")
+									| Консультация по настройке рабочего места для работы с электронной подписью
+								+form__checkbox("ch8")(name="checkbox8" )
+									| Установка
+									+link-info('some text') СКЗИ
+									| , настройка рабочего места для работы с электронной подписью
+								+form__checkbox("ch9")(name="checkbox9" )
+									| Установка
+									+link-info('some text') СКЗИ
+									| , настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в
+									+link-info('some text') ЕСИА
+								+form__checkbox("ch10")(name="checkbox10" )
+									| Установка
+									+link-info('some text')  СКЗИ
+									| , настройка рабочего места для работы с электронной подписью и сопровождение для регистрации в
+									+link-info('some text')  ЕСИА
+									| и
+									+link-info('some text')  ГИС ЖКХ
+								+form__checkbox("ch11")(name="checkbox11" )
+									| Настройка рабочего места для работы в
+									+link-info('some text')  ЕГАИС ФСРАР
+								+form__checkbox("ch12")(name="checkbox12" )
+									| Настройка рабочего места и регистрация на 1 из 5
+									+link-info('some text')  федеральных ЭТП
+								+form__checkbox("ch13")(name="checkbox13" )
+									| Выезд специалиста к клиенту в пределах Томска
+							//right bar
+							+bar.cell.cell__full.cell__col4.cell__sm12.cell__center
+								+right-bar
+									+price
+										strong 2500 ₽
+									+form__btn('Отправить заявку')(class="btn")
+									div.cell__left
+										p
+											| Ваши контактные данные необходимы для уточнения деталей заказа. Мы не используем эти данные для рекламных рассылок и не передаем третьим лицам.
+										p
+											| Копии всех необходимых документов вы можете передать нам по
+											a(href="#") электронной почте
+											|, для того чтобы получить сертификат, вам даже не нужно выходить из дома.
+										p
+											| Сертификат действует
+											strong 1 год
+											|, после этого можно будеть его продлить в нашем удостоверяющем центре
 
 
 
 
 
-		+footer
-			div
-				+logo
-				+info
-					p г. Томск, пер. Совпартшкольный, 3
-					p Время работы 8:30–17:00
-					p
-						a(href="mailto:uc@uguc.ru") uc@uguc.ru
-				+btn('Обратная связь')
-			div
-				+menu
-				+certificates('Наши сертификаты')
-			div
-				+phone ('+7(3822)90-45-96')
-				+parking('3','5')
-			//(C)
+			+footer.grid.grid__size.grid__col12.grid__gvtb20
+				div.box.box__justify.box__sm_center.box__ms_justify
+					div.cell.cell__col3.cell__xs12.cell__sm12.cell__xs_center.cell__ms_center
+						+logo('bottom')
+						+info
+							p г. Томск, пер. Совпартшкольный, 3
+							p Время работы 8:30–17:00
+							p
+								a(href="mailto:uc@uguc.ru") uc@uguc.ru
+						+btn('Обратная связь')
+					div.cell.cell__xs12.cell__sm12.cell__col6
+						div.grid.grid__col12
+							+menu.cell__col12.cell__xs0.cell__sm0
+							+certificates('Наши сертификаты').cell__col12.grid.grid__col12.grid__g5
+								ul.certificates__ul.box
+									li.certificates__li.cell.cell__col4.cell__xs12.cell__sm12.cell__ms12 Квалифицированные
+										ul.certificates__sub-ul
+											li.certificates__sub-li
+												a(href="#").certificates__link  Базовый
+											li.certificates__sub-li
+												a(href="#").certificates__link  Базовый для физических лиц
+									li.certificates__li.cell.cell__col4.cell__xs12.cell__sm12.cell__ms12  Участие в торгах
+										ul.certificates__sub-ul
+											li.certificates__sub-li
+												a(href="#").certificates__link  Основные торговые площадки
+											li.certificates__sub-li
+												a(href="#").certificates__link ТЭК-торг, секция Роснефть
+											li.certificates__sub-li
+												a(href="#").certificates__link  Газпромбанк
+											li.certificates__sub-li
+												a(href="#").certificates__link  Основные торговые площадки и ТЭК-торг, секция Роснефть
+									li.certificates__li.cell.cell__col4.cell__xs12.cell__sm12.cell__ms12  Электронное взаимодействие
+										ul.certificates__sub-ul
+											li.certificates__sub-li
+												a(href="#").certificates__link Сервисы Росреестра
+											li.certificates__sub-li
+												a(href="#").certificates__link  ЕГАИС Алкоголь
+											li.certificates__sub-li
+												a(href="#").certificates__link  Система межведомственного электронного взаимодействия
+											li.certificates__sub-li
+												a(href="#").certificates__link  Порталы ЕФРСБ и ЕФРСФДЮЛ
+
+					div.cell.cell__left.cell__col3.cell__xs0.cell__sm0
+						+phone ('+7(3822)90-45-96')
+						+parking('3','5')
+					//(C)

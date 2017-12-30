@@ -1,4 +1,6 @@
-mixin form__checkbox
-	input.form__checkbox(type="checkbox")&attributes(attributes)
-	block
-	br
+mixin form__checkbox(id)
+	div.form__checkbox
+		input.form__checkbox-input(type="checkbox" id=id)&attributes(attributes)
+		label.form__checkbox-label(for=id)
+		div.form__checkbox-text
+			block

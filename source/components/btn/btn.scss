@@ -1,11 +1,14 @@
 @import '../../index/index';
 
 .btn {
-height:48px;
+	height:48px;
 	width:100%;
 	background-color: $basecolor;
 	color:white;
 	display: inline-block;
 	border:none;
 	box-shadow: 0 2px darken($basecolor, 20%);
+	text-align: center;
+	line-height: 48px;
+	white-space: nowrap;
 }

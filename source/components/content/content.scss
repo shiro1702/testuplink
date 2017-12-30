@@ -3,6 +3,7 @@
 		text-align: center;
 		color:white;
 		font-size: 38px;
+		font-family: 'Conv_SFUIText-Light';
 		text-align: center;
 	}
 	&__body{
@@ -10,5 +11,6 @@
 		background-color: white;
 		margin-top: 20px;
 		margin-bottom: 20px;
+		box-shadow: 0 0 40px rgba(#002f43,0.15);
 	}
 }

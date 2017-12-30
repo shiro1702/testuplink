@@ -16,3 +16,5 @@ import '../components/price/price.scss';
 import '../components/bar/bar.scss';
 import '../components/menu/menu.scss';
 import '../components/header/header.scss';
+import '../components/bg-head/bg-head.scss';
+import './fonts.scss';
